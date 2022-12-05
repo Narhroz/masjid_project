@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Viga&display=swap");
+
+* {
+    font-family: Viga;
+}
+
+/* utulity */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.tombol-atas {
+    margin-left: 100px;
+}
+
+/* Nav */
+
+.navbar {
+    position: relative;
+    z-index: 1;
+    background-color: white !important;
+}
+
+.navbar-brand {
+    font-family: Inspiration;
+    font-size: 32px;
+}
+
+/* profile */
+
+.profile .profile-main {
+    position: relative;
+}
+
+.profile .left img {
+    width: 100%;
+}
+
+.profile .right {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 40px;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+}
+
+/* foto foto */
+.foto-foto-main {
+    column-count: 3;
+    gap: 25px;
+}
+
+.foto-foto-main .foto {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.foto-foto-main .foto p {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    color: #fff;
+}
+
+.foto-foto-main .foto img {
+    width: 100%;
+}
+
+/* visi-misi */
+.visi-misi-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* sejarah */
+
+.sejarah-main img {
+    width: 100%;
+}
+
+.sejarah-main .sejarah-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 50px;
+}
+
+/* footer */
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    /* background-color: #68b984; */
+    padding: 25px 0 25px 0;
+    color: #fff;
+}
+
+.footer .footer-content {
+    display: flex;
+    gap: 8rem;
+}
+
+.footer .footer-content .social-about {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    align-items: baseline;
+    width: 30%;
+}
+
+.footer .footer-content .socail-method {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, auto);
+}
+
+.footer .social-media .fa-brands {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+
+.footer .footer-navbar {
+    padding-bottom: 30px;
+}
+
+/* Mediaquery */
+
+@media (min-width: 992px) {
+    /* navbar */
+    .nav-link {
+        color: black !important;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: solid 3px #28a745;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -8px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* profile */
+    .profile .profile-main {
+        position: inherit;
+    }
+    .profile .right {
+        position: inherit;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* foto foto */
+    .foto-foto-main {
+        column-count: 2;
+        gap: 25px;
+    }
+
+    /* jumbotron */
+    .jumbotron .container h1 {
+        font-size: 3em;
+    }
+
+    /* footer */
+    .footer .footer-content {
+        display: inherit;
+        gap: none;
+    }
+
+    .footer .footer-content .social-about {
+        display: inherit;
+        width: 100%;
+    }
+
+    .footer .footer-content .socail-method {
+        margin-right: 10px;
+    }
+
+    .footer .footer-content .social-media {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 712px) {
+    /* sejarah */
+    .sejarah-main .sejarah-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 572px) {
+    /* profile */
+    .profile .right {
+        padding: 10px;
+    }
+    .profile .right h1 {
+        font-size: 1.5em;
+    }
+
+    /* foto foto */
+    .foto-foto-main {
+        column-count: 1;
+        gap: 0px;
+    }
+
+    /* visi-misi */
+    .visi-misi-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* footer */
+    .footer .footer-content {
+        width: 90%;
+    }
+    .footer .footer-content .socail-method {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 512px) {
+    /* navbar */
+    nav .tombol-atas {
+        margin-left: 0;
+    }
+}
+
+.a {
+    margin-bottom: 100px;
+}
